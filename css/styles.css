@@ -1,22 +1,22 @@
 /* Reset some default styles */
+/* Reset and Basic Styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: Arial, sans-serif;
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #007BFF; /* Change to a modern blue color */
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
+/* Navigation Styles */
 nav {
-    background-color: #444;
+    background-color: #333; /* Dark background for navigation */
     text-align: center;
     padding: 10px;
 }
@@ -30,15 +30,28 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Main Content Styles */
 .main-content {
-    max-width: 800px;
+    max-width: 900px; /* Wider content area for a modern look */
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
+
+
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #007BFF; /* Match the header's color for consistency */
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px; /* Increased padding for a more substantial footer */
+}
+
+/* Adjust header padding for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
 }
